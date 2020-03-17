@@ -94,8 +94,8 @@
     </div>
 
     <div class="container">
-        <div class="row" style="margin-top:15px">
-            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" style="margin-top:15px">
                 <div class="card" >
                     <div class="card-body">
                         <h5 class="card-title">
@@ -109,7 +109,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" style="margin-top:15px">
                 <div class="card" >
                     <div class="card-body">
                         <h5 class="card-title">
@@ -123,7 +123,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" style="margin-top:15px">
                 <div class="card" >
                     <div class="card-body">
                         <h5 class="card-title">
@@ -136,14 +136,14 @@
                         <p class="card-text">Penderita Sembuh</p>
                     </div>
                 </div>
-            </div>  
+            </div>
         </div>
     </div>
 
     <div class="container">
         <div class="row" style="margin-top:15px">
-            <div class="col-lg-12">
-                <table class="table table-responsive table-bordered table-striped table-hover">
+            <div class="col-lg-12 table-responsive">
+                <table class="table table-bordered table-striped table-hover">
                     <thead>
                         <tr>
                             <th>#</th>
