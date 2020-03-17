@@ -12,16 +12,15 @@
     <style>
       .map {
         height: 500px;
-        width: 100%;
       }
     </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-fixed-top navbar-dark bg-dark">
         <a class="navbar-brand" href="#">Covid-19 Info</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-        </button>
+        </button> -->
 
         <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
@@ -144,7 +143,7 @@
     <div class="container">
         <div class="row" style="margin-top:15px">
             <div class="col-lg-12">
-                <table class="table table-bordered table-striped table-hover">
+                <table class="table table-responsive table-bordered table-striped table-hover">
                     <thead>
                         <tr>
                             <th>#</th>
