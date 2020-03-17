@@ -34,7 +34,7 @@
 
     <div class="container">
         <div class="row" style="margin-top:15px">
-            <div class="col-lg-12">
+            <div class="col-lg-12 ">
                 <div id="map" class="map"></div>
                 <div style="display:none">
                     <table class="table table-bordered table-striped table-hover">
@@ -96,7 +96,7 @@
 
     <div class="container">
         <div class="row" style="margin-top:15px">
-            <div class="col">
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                 <div class="card" >
                     <div class="card-body">
                         <h5 class="card-title">
@@ -110,7 +110,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col">
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                 <div class="card" >
                     <div class="card-body">
                         <h5 class="card-title">
@@ -124,7 +124,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col">
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                 <div class="card" >
                     <div class="card-body">
                         <h5 class="card-title">
