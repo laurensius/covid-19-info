@@ -175,6 +175,23 @@
         </div>
     </div>
 
+    <hr>
+
+    <footer class="footer">
+        <div class="container">
+            <span class="text-muted">
+                Developed by 
+                <a taget="_blank" href="https://github.com/laurensius">Laurensius Dede Suhardiman</a> &
+                <a taget="_blank" href="https://github.com/sugiantoaziz">Azis Sugianto Suparman</a> <br>
+
+                Data Source 
+                <a taget="_blank" href="https://systems.jhu.edu/">CSSE Johns Hopkins University</a> & 
+                <a taget="_blank" href="https://kawalcorona.com">Ethical Hacker Indonesia</a><br>
+            </span>
+        </div>
+    </footer>
+    <br>
+
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" 
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" 
