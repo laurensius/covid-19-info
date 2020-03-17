@@ -31,7 +31,7 @@ class Api extends CI_Controller {
             );
         }else{
             $this->http_response(
-                "warning","Load data gagal", ""
+                "warning","Load data gagal", $data
             );
         }
     }
