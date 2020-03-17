@@ -31,7 +31,61 @@
     <div class="container">
         <div class="row" style="margin-top:15px">
             <div class="col-lg-12">
-                <!-- <div id="map" class="map"></div> -->
+                <div id="map" class="map"></div>
+                <div style="display:none">
+                    <table class="table table-bordered table-striped table-hover">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Negara / Regional</th>
+                                <th>Terkonfirmasi</th>
+                                <th>Meninggal</th>
+                                <th>Sembuh</th>
+                                <th>Aktif</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <?php
+                            for($x=0;$x<sizeof($data["detail_kasus"]);$x++){
+                            ?>
+                            <tr>
+                                <td><?php echo ($x+1) ?></td>
+                                <td>
+                                    <div id="<?php echo "regional_negara_".$x; ?>">
+                                        <?php echo $data["detail_kasus"][$x]["regional_negara"] ?>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div id="<?php echo "terkonfirmasi_".$x; ?>">
+                                        <div class="alert alert-danger">
+                                        <?php echo $data["detail_kasus"][$x]["regional_negara"] ." - ". $data["detail_kasus"][$x]["terkonfirmasi"] ?>
+                                        </div>
+                                       
+                                    </div>
+                                </td>
+                                <td>
+                                    <div id="<?php echo "meninggal_".$x; ?>">
+                                        <?php echo $data["detail_kasus"][$x]["meninggal"] ?>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div id="<?php echo "sembuh_".$x; ?>">
+                                        <?php echo $data["detail_kasus"][$x]["sembuh"] ?>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div id="<?php echo "aktif_".$x; ?>">
+                                        <?php echo $data["detail_kasus"][$x]["aktif"] ?>
+                                    </div>
+                                </td>
+                            </tr>
+                            <?php
+                            }
+                            ?>
+                        </tbody>
+                    </table>
+                    <div id="popup" title="Welcome to OpenLayers"></div>
+                </div>
             </div>
         </div>
     </div>
@@ -133,13 +187,23 @@
         target: 'map',
         layers: [
             new ol.layer.Tile({
-            source: new ol.source.OSM()
+                source: new ol.source.OSM()
             })
         ],
         view: new ol.View({
-            center: ol.proj.fromLonLat([120, 0]),
-            zoom: 3
+            center: ol.proj.fromLonLat([110, 0]),
+            zoom: 6
         })
     });
+
+    for(var x=0;x<global_data.length;x++){
+        var negara = new ol.Overlay({
+            position: ol.proj.fromLonLat([global_data[x].lon, global_data[x].lat]),
+            element: document.getElementById('terkonfirmasi_'+x)
+        });
+        map.addOverlay(negara);
+    }
+
+    
     </script>
 </body>
