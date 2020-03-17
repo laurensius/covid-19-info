@@ -84,6 +84,7 @@ defined('EXIT_DATABASE')       OR define('EXIT_DATABASE', 8); // database error
 defined('EXIT__AUTO_MIN')      OR define('EXIT__AUTO_MIN', 9); // lowest automatically-assigned error code
 defined('EXIT__AUTO_MAX')      OR define('EXIT__AUTO_MAX', 125); // highest automatically-assigned error code
 
-defined('CSV_EXT')      OR define('CSV_EXT', ".csv");
-defined('CCSE_DAILY_DETAIL')      OR define('CCSE_DAILY_DETAIL', "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_daily_reports/");
+defined('IEH')      OR define('IEH', "https://kawalcorona.com/");
+defined('CCSE_JHU')      OR define('CCSE_JHU', "https://systems.jhu.edu/");
+
 

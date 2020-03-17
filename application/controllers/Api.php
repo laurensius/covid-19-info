@@ -5,7 +5,7 @@ class Api extends CI_Controller {
 
     function __construct(){
         parent::__construct();
-        $this->load->model("mod_global_case");
+        $this->load->model("mod_kasus_global");
     }
     
     function index(){
@@ -23,13 +23,17 @@ class Api extends CI_Controller {
             ,JSON_PRETTY_PRINT);
     }
 
-	function global_cases($date = null){
-        $data = $this->mod_global_case->global_cases($date);
-        if(sizeof($data) > 0){
-            $this->http_response("success","Load data berhasil",$data);
+	function kasus_global(){
+        $data = $this->mod_kasus_global->get();
+        if(sizeof($data["detail_kasus"]) > 0){
+            $this->http_response(
+                "success","Load data berhasil",$data
+            );
         }else{
-            $this->http_response("warning","Load data gagal",array());
-        } 
+            $this->http_response(
+                "warning","Load data gagal", ""
+            );
+        }
     }
 
 
