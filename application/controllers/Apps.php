@@ -13,6 +13,11 @@ class Apps extends CI_Controller {
         $this->load->view("apps/index",$data);
     }
 
+    function jabar(){
+        // $data["data"] = $this->mod_kasus_global->get();
+        $this->load->view("apps/jabar");
+    }
+
   
 
 
