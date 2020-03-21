@@ -98,12 +98,12 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" style="margin-top:15px">
-                <div class="card" >
+                <div class="card text-white bg-warning" >
                     <div class="card-body">
                         <h5 class="card-title">
                             <b>
                             <?php 
-                                echo $data["kesimpulan"]["total_kasus"];
+                                echo number_format($data["kesimpulan"]["total_kasus"], 0, ".", ".");
                             ?>
                             </b>
                         </h5>
@@ -112,12 +112,12 @@
                 </div>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" style="margin-top:15px">
-                <div class="card" >
+                <div class="card text-white bg-danger" >
                     <div class="card-body">
                         <h5 class="card-title">
                             <b>
                             <?php 
-                                echo $data["kesimpulan"]["total_meninggal"];
+                                echo number_format($data["kesimpulan"]["total_meninggal"], 0, ".", ".");
                             ?>
                             </b>
                         </h5>
@@ -126,12 +126,12 @@
                 </div>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" style="margin-top:15px">
-                <div class="card" >
+                <div class="card text-white bg-success" >
                     <div class="card-body">
                         <h5 class="card-title">
                             <b>
                             <?php 
-                                echo $data["kesimpulan"]["total_sembuh"];
+                                echo number_format($data["kesimpulan"]["total_sembuh"], 0, ".", ".");
                             ?>
                             </b>
                         </h5>
